@@ -1,13 +1,20 @@
 package pl.edu.agh.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class PitStop {
 
+
+    @JsonProperty("session_key")
     int sessionKey;
 
+    @JsonProperty("driver_number")
     int driverNumber;
 
+    @JsonProperty("pit_duration")
     double pitDuration;
 
+    @JsonProperty("lap_number")
     int lapNumber;
 
 
